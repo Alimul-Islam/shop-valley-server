@@ -5,6 +5,10 @@ const ObjectId = require('mongodb').ObjectId
 cors = require('cors');
 const port = 4000
 
+app.get('/', (req, res) => {
+    res.send("Hello from database");
+})
+
 app.use(cors());
 app.use(express.json())
 
